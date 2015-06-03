@@ -1,0 +1,184 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.main{
+		padding-top: 10%;
+	}
+	 .first{
+ 	margin-left: 120px;
+ }
+ .second{
+ 	margin-left: 120px;
+ }
+ .third{
+ 	margin: 100px 15px 0 auto;
+ }
+ .fourth{
+	margin: 100px 0 0 15px;
+ }
+ .fifth{
+	margin-left: 40px;
+ }
+ .sixth{
+	margin-left: 40px;
+ }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.main{
+		padding-top: 10%;
+	}
+.first{
+ 	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+ .second{
+ 	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+ .third{
+ 	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+ .fourth{
+	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+ .fifth{
+	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+ .sixth{
+	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+.main{
+	padding-top: 32%;
+}
+
+.logo{
+	width: 320px;
+	height: 320px;
+	line-height: 320px;
+	margin-left: -70px;
+}
+
+.first{
+ 	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+ .second{
+ 	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 20px;
+ 	margin-left: 0;
+ }
+ .third{
+ 	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: -20px;
+ }
+ .fourth{
+	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+ .fifth{
+	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 20px;
+ 	margin-left: 0;
+ }
+ .sixth{
+	margin-top: 0;
+ 	margin-right: 0;
+ 	margin-bottom: 0;
+ 	margin-left: 0;
+ }
+	
+	
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
