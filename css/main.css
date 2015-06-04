@@ -108,18 +108,23 @@ body {
 	border-radius: 50%;
 	line-height: 150px;
 	color: #fff;
-	transition: all .5s ease-in;
-	margin-bottom: 1.5em;
+	-webkit-transition: all .5s ease-in;
+	        transition: all .5s ease-in;
+	margin-bottom: 1em;
+	background: -webkit-radial-gradient(at 0px 40px, #F9FDC1, #519E05);
 	background: radial-gradient( at 0px 40px, #F9FDC1, #519E05);
+	font-size: 1.2em;
 }
 
 .link:hover,
 .link:active,
 .link:focus,
 .link:visited {
+	box-shadow: inset 0 0 0px 100px #519E51;
 	box-shadow: inset 0 0 0px 100px rgba(81, 158, 81, 0.39);
-	transition: all .3s linear;
-	color: #fff;
+	-webkit-transition: all .3s linear;
+	        transition: all .3s linear;
+	color: #222;
 	text-decoration: none;
 }
 
@@ -190,6 +195,7 @@ body {
 }
 
 .logo {
+	background: -webkit-radial-gradient(at 0px 40px, #F9FDC1, #519E05);
 	background: radial-gradient( at 0px 40px, #F9FDC1, #519E05);
 	width: 378px;
 	height: 378px;
@@ -249,6 +255,10 @@ body {
 }
 /*Главная*/
 
+.active{
+	box-shadow: inset 0 0 0px 100px rgba(81, 158, 81, 0.5);
+}
+
 p {
 	text-align: left;
 }
@@ -259,24 +269,50 @@ p {
 }
 
 .wrap {
-	background: url('../img/wrap-bg.jpg');
-	height: 80vh;
+	background: url('../img/wrap-bg.jpg') no-repeat;
+	height: 74vh;
+	background-size: cover;
 }
 
 .footer {
 	background: #222;
 	color: #fff;
+	padding: 0.5em 0;
+}
+.mail a{
+	color: #fff;
+}
+.mail a:hover,
+.mail a:active,
+.mail a:visited,
+.mail a:focus,{
+	text-decoration: none;
+	color: #fff;
 }
 /*Акции*/
 
 .promo {
-	/*border: 1px solid #000;*/
-	
 	overflow-y: scroll;
 	padding: 15px;
 	margin-bottom: 20px;
-	height: 67vh;
+	height: 62vh;
 	text-align: left;
+}
+
+.promo::-webkit-scrollbar,
+.map::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.promo::-webkit-scrollbar-track,
+.map::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.promo::-webkit-scrollbar-thumb,
+.map::-webkit-scrollbar-thumb {
+	background: rgba(151,201,37, 0.85);
+
 }
 
 .promo__list {
@@ -315,8 +351,8 @@ p {
 }
 
 .project {
-	width: 1140px;
-	height: 200px;
+	width: 100%;
+	height: 22vh;
 }
 
 .project:nth-child(1) {
@@ -332,6 +368,7 @@ p {
 }
 
 .overlay {
+	background: #97C925;
 	background: rgba(151, 201, 37, .7);
 	position: absolute;
 	margin: auto;
@@ -344,7 +381,8 @@ p {
 	width: 100%;
 	height: 100%;
 	opacity: 1;
-	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	        transition: .3s ease;
 }
 
 .overlay:hover {
@@ -358,29 +396,43 @@ p {
 	line-height: 6;
 }
 
+.map{
+	overflow-y: scroll;
+	height: 64vh;
+}
+
 .map h2 {
-	margin: 0;
+	margin: 1em 0;
+}
+.ya__map{
+	margin-bottom: 1em;
 }
 
 .rect {
+	fill: #66CC99;
 	fill: rgba(102, 204, 153, 0.6);
 	opacity: 0.5;
-	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	        transition: .3s ease;
 }
 
 .rect:hover {
+	fill: #26A65B;
 	fill: rgba(38, 166, 91, 0.8);
 	cursor: pointer;
-	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	        transition: .3s ease;
 	opacity: 1;
 }
 
 .sold {
+	fill: #E74C3C;
 	fill: rgba(231, 76, 60, 0.8);
 	opacity: 1;
 }
 
 .sold:hover {
+	fill: #E74C3C;
 	fill: rgba(231, 76, 60, 0.8);
 	cursor: default;
 }
@@ -440,6 +492,9 @@ ul.thumbnails-carousel li {
 .floor__desc h3 {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+}
+.color{
+	width: 150px;
 }
 
 label {
